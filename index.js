@@ -49,6 +49,12 @@ class FloatingLabel extends React.Component {
     value: this.props.value
   };
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.value !== this.state.value) {
+      this.setState({ value: nextProps.value })
+    }
+  }
+
   handleChange = evt => {
     const value = evt.target.value;
 
