@@ -34,7 +34,8 @@ export default {
       plugins: [
         "transform-react-remove-prop-types",
         "external-helpers",
-        "transform-class-properties"
+        "transform-class-properties",
+        "@babel/plugin-proposal-class-properties"
       ]
     }),
     cjs({
